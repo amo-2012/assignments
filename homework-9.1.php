@@ -30,5 +30,6 @@ function sub ( $a, $b )
         
 assert (sub (8,4)  == 4);
 assert (sub (4,2)  == 2);
+assert (sub (482,480)  == 2);
 
 ?>
