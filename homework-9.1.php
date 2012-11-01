@@ -1,8 +1,8 @@
 <?php
 /**
  *
- * Homework week 9   Oct 27 2012.   Coding Dojo
- * practice 1
+ * Homework week 9   Oct 31 2012.   Coding Dojo
+ * practice 2
 */
 
 
@@ -14,6 +14,21 @@ function add ( $a, $b )
 }
 
         
-assert (add (1,0)  == 1);
+assert (add (8,4)  == 12);
+
+
+
+
+
+function sub ( $a, $b )
+{
+ 
+    return $a - $b;  
+
+}
+
+        
+assert (sub (8,4)  == 4);
+assert (sub (4,2)  == 2);
 
 ?>
