@@ -1,35 +1,36 @@
 <?php
 /**
  *
- * Homework week 9   Oct 31 2012.   Coding Dojo
- * practice 2
+ * Homework week 9   Nov 2 2012.   Coding Dojo
+ * practice 3
 */
 
 
-function add ( $a, $b )
+function multi ( $a, $b )
 {
  
-    return $a + $b;  
+    return $a * $b;  
 
 }
 
         
-assert (add (8,4)  == 12);
+assert (multi (2,4)  == 8);
 
 
 
 
 
-function sub ( $a, $b )
+function div ( $a, $b )
 {
  
-    return $a - $b;  
+    return $a / $b;  
 
 }
 
         
-assert (sub (8,4)  == 4);
-assert (sub (4,2)  == 2);
-assert (sub (482,480)  == 2);
+assert (div (8,4)  == 2);
+assert (div (12,2)  == 6);
+assert (div (250,125)  == 2);
+
 
 ?>
