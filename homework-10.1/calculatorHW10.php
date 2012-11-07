@@ -15,6 +15,6 @@ function sub ( $a, $b )
     return $a - $b;         
  
 }
-echo "true". "calculator is working  YEAH!";
+echo "true !". " calculator is working  YEAH!";
 
 ?>
