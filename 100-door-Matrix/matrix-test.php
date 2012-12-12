@@ -7,11 +7,36 @@
  * this file will set up the tests.
  * 
  */
- require_once "production.php";
+ require_once "productionDoors.php";
  
  if (is_array ($doors))
-    echo 'the hallway is there';
+    echo '        The hallway is there';
     
     
 if (assert (count ($doors) ==10 ) )
     echo '   and there are 10 doors in the hallway';
+                  // will add more doors once the pattern is established
+                  
+                  
+function open_closed ($doors)
+    {
+        for ($i = 1; $i <= 10; $i++)
+        {
+            assert ($doors [$i] == ' open   ');
+            echo $i . 'door' . $doors [$i];
+        }
+    }
+ 
+function test_evenDoors ($doors)
+    {
+        for ( $i =1; $i <=10; $i++)
+        {
+            if (($i %2 ) == 0)
+                if (assert ($doors [$i] == 'closed'))
+                echo $i . '  is now  CLOSED   ';                
+              
+        }
+        
+    }
+    
+test_evenDoors ($doors);
